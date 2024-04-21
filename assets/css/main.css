@@ -529,3 +529,56 @@ border-radius: 10px;
     grid-template-columns: 400px;
     margin-bottom: 200px;
 }
+.img-tovar {
+    display: flex;
+    gap: 10px;
+}
+.img-tovar img{
+    object-fit: cover;
+    transition: border-radius 1.0s ease;
+}
+.img-tovar img:hover {
+    border-radius: 10px;
+}
+.Tovar-vse {
+    display: flex;
+    margin-left: 20%;
+    margin-bottom: 50px;
+}
+.img-tovar2 {
+    display: grid;
+    gap: 10px;
+}
+.infa2 {
+    display: grid;
+    margin-left: 10px;
+}
+.infa2 h4 {
+    font-size: 30px;
+    padding-bottom: 0%;
+    margin-bottom: 0px;
+}
+.infa2 h3 {
+    font-size: 20px;
+    margin-bottom: 0%;
+}
+.infa2 p {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: 20px;
+}
+.infa2 button {
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 0px;
+    border: black 1px solid;
+    transition: color 0.5s ease;
+    margin-top: 50px;
+}
+.infa2 button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}

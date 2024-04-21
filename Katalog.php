@@ -50,27 +50,15 @@
                 <section class="vse-veshi">
                     <h1 class="nazvanie">НОВИНКИ</h1>
                     <div class="kart" id="product-container">
-
+                        <?php include_once 'Katalog.php'; ?>
                     </div>
                 </section>
             </div>
         </section>
     </main>
-    <script>
-    // Загрузка каталога товаров после загрузки основной страницы
-    window.onload = function() {
-        var xhr = new XMLHttpRequest();
-        xhr.open("GET", "assets/bd/Katalog.php", true);
-        xhr.onreadystatechange = function() {
-            if (xhr.readyState == 4 && xhr.status == 200) {
-                document.getElementById("product-container").innerHTML = xhr.responseText;
-            }
-        };
-        xhr.send();
-    };
-    </script>
     <?php
     include ('assets/php/foozer.php')
     ?>
 </body>
+<script defer src="assets/js/zagruzka-katalog.js"></script>
 </html>
