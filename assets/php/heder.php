@@ -4,7 +4,7 @@
             <a href="index.php"  id="scrolling-text" class="maga"><h1>МАГА</h1></a>
         </div>
         <div class="index-blok2">
-            <a href="Korzina.html"><img src="assets/svg/korzina.svg" alt=""></a>
+            <a href="Korzina.php"><img src="assets/svg/korzina.svg" alt=""></a>
             <a href="Map.php"><img src="assets/svg/Map.svg" alt=""></a>
             <a href="User.php"><img src="assets/svg/User.svg" alt=""></a>
         </div>
