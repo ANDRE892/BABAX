@@ -16,7 +16,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // Создаем HTML-разметку для каждого товара
     while($row = $result->fetch_assoc()) {
-        echo '<a href="' . $row["silka"] . '">
+        echo '<a href="Tovar.php?id=' . $row["id"] . '">
                 <div class="blok-kart">
                     <img src="assets/png/veshi/' . $row["img"] . '" alt="">
                     <h4>' . $row["nazvanie"] . '</h4>
@@ -29,5 +29,6 @@ if ($result->num_rows > 0) {
 } else {
     echo "0 результатов";
 }
+
 $conn->close();
 ?>

@@ -529,12 +529,14 @@ border-radius: 10px;
     grid-template-columns: 400px;
     margin-bottom: 200px;
 }
+/* Tovar */
 .img-tovar {
     display: flex;
     gap: 10px;
 }
 .img-tovar img{
-    object-fit: cover;
+    border: 1px solid;
+    object-fit:cover;
     transition: border-radius 1.0s ease;
 }
 .img-tovar img:hover {
