@@ -1,0 +1,41 @@
+body {
+    overflow-x: hidden;
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.shape {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: rgba(0, 0, 0, 0.5);
+    border: 4px solid #00000000;
+    border-radius: 50%;
+    user-select: none;
+    pointer-events: none;
+    animation: moveAndFade 5s linear infinite, rotate 5s linear infinite;
+    animation-timing-function: linear;
+    z-index: -1;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes moveAndFade {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}

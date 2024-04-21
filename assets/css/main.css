@@ -1,0 +1,534 @@
+::after,::before {box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;}
+/* это для того что бы не было лишнего пространства */
+body {
+    margin: 0;
+    font-family: "Tektur", sans-serif;
+    font-optical-sizing: auto;
+}
+header {
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+}  
+header a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-left: 0px;
+}
+header h1 {
+    display: inline-block;
+    margin: 0px;
+}
+/* js logo*/
+#scrolling-text {
+    font-size: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: font-size 0.5s ease, left 0.3s ease, color 0.3s ease; /* Добавляем плавный переход цвета */
+    color: black; 
+}
+.Menu {
+    position: fixed;
+    cursor: pointer;
+    top: 70px; 
+    transition: width 0.5s ease, top 0.8s ease; 
+    z-index: 1000;
+}
+.maga {
+    z-index: 1000;
+}
+/* 2  блока */
+.index-blok1 {
+    margin-right: auto;
+    align-items: center;
+}
+.index-blok2 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 5px;
+}
+/* бок панель */
+.katalog-menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Начальное положение за пределами экрана */
+    width: 250px;
+    height: 100%;
+    background-color: #dddddd91;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+    transition: left 0.3s ease; /* Плавное изменение положения */
+}
+.katalog-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    line-height: 40px;
+    transition: color 0.3s ease, ;
+    border-left: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    padding-left: 5px;
+}
+.katalog-menu a:hover {
+    color: rgb(54, 54, 54); /* Цвет текста при наведении */
+    border-left-color: grey; /* Серый цвет бордера при наведении */
+    border-bottom-color: grey; /* Серый цвет бордера при наведении */
+}
+/* manu */
+.manu-kartinka {
+    cursor: pointer;
+    margin-left: 150px;
+}
+/* pod-katalog-menu */
+.pod-katalog-menu {
+    display: grid;
+}
+.pod-katalog-menu2 {
+    display: grid;
+    margin-top: 100px;
+}
+@media only screen and (max-width: 1600px) {
+    .pod-katalog-menu2 {
+        border-top: 2px solid black;
+        margin-top: 0px;
+    }
+}
+.vk-tg {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0%;
+}
+.vk-tg p {
+    font-size: 25px;
+    cursor: default;
+    margin: 0%;
+    margin-left: 3px;
+}
+.vk-tg a{
+    display: flex;
+    align-items: center;
+}
+/* main-index */
+main {
+    padding-top: 50px;
+    margin: 0px 5%;
+}
+.glav-index-png {
+    display: flex;
+    justify-content: center;
+}
+.glav-index-png img {
+    object-fit: cover;
+    position: relative;
+    margin: 5px; /* отступ между изображениями */
+}
+.png-index   {
+    display: flex;
+    flex-wrap: wrap;
+    width: 820px;
+    align-items: flex-start;
+}
+.png-index a {
+    text-decoration: none;
+    color: black;
+}
+.png-index2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 405px;
+}
+.png-index2 a { /* почему цвет нельзя задать в png-index2. да потому что в а (сылка) надо указывать отдельно. так работать не будет ну и + text-decoration*/
+    text-decoration: none;
+    color: black;
+}
+.image-container {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: filter 0.3s ease; /* Плавный переход filter при 0.3 секундах при изменении цвета*/
+    cursor: pointer;
+}
+.image-container:hover img {
+    filter: grayscale(100%); /* серый цвет при наведении */
+}
+.image-text {
+    font-family: "Russo One", sans-serif;
+    font-weight: 300;
+    letter-spacing: 6px;
+    font-style: normal;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+}
+/* index-text */
+.index-text { 
+    display: flex;
+    margin: 0px 10%;
+    margin-top: 100px;
+}
+/* Logo-brendi */
+.Logo-brendi {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 100px;
+}
+.Logo-brendi img {
+    height: 100px;
+}
+/* foozer */
+footer {
+    margin: 0px 10%;
+}
+.infa {
+    display: grid;
+    grid-template-columns: 450px 300px 450px;
+    justify-content: center;
+    padding: 40px 0px;
+}
+.infa div {
+    margin-left: auto;
+    margin-right: auto;
+}
+.infa h1 {
+    font-size: 30px;
+    cursor: default;
+}
+.infa p {
+    font-size: 20px;
+}
+.infa a { 
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    line-height: 30px;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+.infa a:hover {
+    border-bottom: 1px solid gray ;
+    color: gray;
+}
+.sots-seti {
+    display: grid;
+    grid-template-columns: auto max-content auto;
+    align-items: center;
+    margin-bottom: 2px;
+}
+.sots-seti img {
+    padding: 10px;
+    width: 40px;
+    transition: transform 0.5s ease;
+}
+.sots-seti img:hover {
+    background-color: rgb(78, 78, 78);
+    border-radius: 30px;
+    transform: scale(1.2);
+}
+/* Обренде */
+.Sammagaz {
+    object-fit: cover;
+    margin-left: auto;
+}
+.Sammagaz-infa {
+    display: grid;
+}
+.Sammagaz-infa div{
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Obrende-kart {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: 140px;
+    justify-content: space-between; /* Равномерное распределение между изображениями */
+}
+
+.Obrende-kart img {
+    margin-bottom: 25px; /* Отступы снизу между изображениями */
+    margin-left: auto;
+    transition: transform 0.5s ease, border-radius 0.5s ease;
+}
+.Obrende-kart img:hover {
+transform: scale(1.1);
+border-radius: 10px;
+}
+/* Yxod */
+.birka {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    transition: transform 0.3s ease; /* добавляем переход для свойства transform */
+}
+.birka p {
+    cursor: default;
+}
+.birka span:hover {
+    background-color: black;
+    border-radius: 30px;
+}
+.birka img {
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.overlay {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* затемнение с прозрачностью 50% */
+}
+.text-birka {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    width: 330px;
+    display: grid;
+    gap: 150px;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+/* vse-Yxod */
+.vse-Yxod {
+    transition: transform 0.5s ease, border 0.3s ease, border-radius 1.0s ease;
+    border: 1px solid rgba(255, 255, 255, 0.200);
+    padding: 10px;
+}
+.vse-Yxod h1{
+    cursor: default;
+}
+.vse-Yxod p {
+    cursor: crosshair;
+    font-weight: 400;
+}
+.vse-Yxod:hover {
+    transform: scale(1.1);
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding-bottom: -10px;
+}
+.blok-Yxod div{
+    display: flex;    
+    width: 400px;
+    align-items: center;
+    gap: 30px;
+}
+.blok-Yxod img {
+    width: 38px;
+    height: 38px;
+}
+.razdel {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-left: 300px;
+}
+.razdel2 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-left: 300px;
+    margin-top: 70px;
+}
+/* всплывающее окно */
+#notification {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 9999;
+}
+#phone  {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    line-height: 30px;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+#phone:hover {
+    border-bottom: 1px solid gray ;
+    color: gray;
+}
+/* Регистрация - Вход */
+.container-form {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+.container-form h1 {
+    margin-bottom: 40px;
+}
+.form-group {
+    position: relative;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 5px;
+    font-size: 25px;
+    transition: all 0.3s ease;
+}
+.form-group label {
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    font-size: 15px;
+    color: #999;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    background-color: none;
+    padding: 0 5px;
+}
+.form-group input:focus + label {
+    top: -25px;
+    font-size: 20px;
+    color: #333;
+}
+/* Katalog */
+.katalog-top {
+    display: flex;
+    gap: 10px;
+}
+.akses {
+    display: none;
+}
+.katalog-top img {
+    border-radius: 5px;
+    transition: border-radius 0.5s ease;
+    border: 1px solid black;
+}
+.katalog-top img:hover {
+    border-radius: 15px;    
+
+}
+.png-glav-katalog {
+    margin-left: auto;
+    width: 1220px;
+}
+.katalog-container {
+    position: relative;
+}
+.katalog-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px; 
+    color: white;
+    font-size: 24px; 
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 5px;
+}
+/* вещи  */
+.nazvanie {
+    font-size: 30px;
+}
+.kart {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.kart a {
+    text-decoration: none;
+    color: black;
+    width: calc(33.33% - 10px); /* Set width for each item considering the gap */
+    flex-grow: 1;
+    flex-shrink: 1;
+    max-width: 400px; /* Maximum width for each item */
+}
+
+.blok-kart {
+    padding: 10px;
+    transition: transform 0.3s ease;
+    display: block;
+    width: 100%;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.blok-kart:hover {
+    transform: scale(1.01);
+    border: 1px solid black;
+    padding: 9px;
+    border-radius: 5px;
+}
+
+.blok-kart img {
+    width: 100%;
+    height: auto;
+}
+@media only screen and (min-width: 2000px) {
+    .png-glav-katalog {
+        width: 1640px;
+    }
+    .akses {
+        display:block;
+    }
+}
+/* politika */
+.politika {
+    margin: 0px 200px;
+}
+.politika h1 {
+    font-size: 30px;
+}
+/* pomosh */
+.main-pomosh {
+    margin-left: 20%;
+}
+.pomosh {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+.flex {
+    display: flex;
+    gap: 20px;
+}
+.flex p {
+    cursor: pointer;
+    font-weight: 500;
+}
+<<<<<<< HEAD
+.hidden {
+    display: none;
+}
+/* yslovia hidden */
+.kontakti {
+    margin-top: 100px;
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    grid-template-columns: 400px;
+    margin-bottom: 200px;
+}
+=======
+>>>>>>> 5d6400e45d89f31021b11302cb2a6900d43d1cf0
