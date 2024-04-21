@@ -37,14 +37,7 @@
             </form>
         </div>
     </main>
-<<<<<<< HEAD
 </body>
 <script defer src="assets/js/Color-logo.js"></script>
 <script defer src="assets/js/Logo.js"></script>
-=======
-    <?php
-    include ('assets/php/foozer.php')
-    ?>
-</body>
->>>>>>> 5d6400e45d89f31021b11302cb2a6900d43d1cf0
 </html>

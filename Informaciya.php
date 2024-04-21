@@ -21,10 +21,6 @@
     <main>
 
     </main>
-<<<<<<< HEAD
-=======
-
->>>>>>> 5d6400e45d89f31021b11302cb2a6900d43d1cf0
     <?php
     include ('assets/php/foozer.php')
     ?>

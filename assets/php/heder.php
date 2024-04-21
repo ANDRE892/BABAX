@@ -23,13 +23,8 @@
         <div class="pod-katalog-menu2">
             <a href="Obrende.php">О бренде</a>
             <a href="Informaciya.php">Информация</a>
-<<<<<<< HEAD
             <a href="Kontakti.php">Контакты</a>
             <a href="Korzina.php">Корзина </a>
-=======
-            <a href="">Контакты</a>
-            <a href="">Корзина </a>
->>>>>>> 5d6400e45d89f31021b11302cb2a6900d43d1cf0
             <span class="vk-tg"><a href="https://vk.com/">VK <img src="assets/svg/VK.svg" alt=""></a> <p>/</p> <a href="https://web.telegram.org/k/">TG <img src="assets/svg/TG.svg" alt=""></a></span>
             <a href="Vxod.php">ВХОД</a>
             <a href="Registraciya.php">РЕГИСТРАЦИЯ</a>

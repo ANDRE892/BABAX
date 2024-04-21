@@ -4,22 +4,13 @@
         <div> 
             <h1>Информация</h1> 
             <a href="Map.php">Магазины</a><br> 
-<<<<<<< HEAD
             <a href="Obrende.php">О бренде</a><br>
-=======
-            <a href="Obrende.php">О бренде</a><br> 
-            <a href="">Подарочные сертификаты</a><br> 
->>>>>>> 5d6400e45d89f31021b11302cb2a6900d43d1cf0
             <a href="Politika.php">Политика конфиденциальности</a><br> 
         </div> 
         <div> 
             <h1>Помощь</h1> 
             <a href="Pomosh.php">Оплата</a><br> 
-<<<<<<< HEAD
             <a href="Pomosh.php">Доставка</a><br> 
-=======
-            <a href="Pomosh.php">Условия доставки</a><br> 
->>>>>>> 5d6400e45d89f31021b11302cb2a6900d43d1cf0
             <a href="Pomosh.php">Правила возврата</a><br> 
             <a href="Yxodzaodejdoi.php">Уход за одеждой</a><br> 
         </div> 

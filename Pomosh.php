@@ -18,7 +18,6 @@
     <?php
     include ('assets/php/heder.php')
     ?>
-<<<<<<< HEAD
 <main class="main-pomosh">
     <section class="pomosh">
         <h1 id="section-title">Оплата</h1>
@@ -125,35 +124,6 @@
     </section>
 </main>
     
-=======
-    <main class="main-pomosh">
-        <section class="pomosh">
-            <h1>Оплата</h1>
-            <div class="flex">
-                <p id="payment-link">Оплата</p>
-                <p id="delivery-link">Условия доставки</p>
-                <p id="return-policy-link">Правила возврата</p>
-            </div>
-        </section>
-        <hr>
-        <section class="oplata">
-            <div>
-                <p class="p">Вы можете оплатить заказ:</p>
-                <p class="p">- на сайте банковской картой после оформления заказа.<br>
-                - при получении наличными или банковской картой. При оформлении заказа обратите внимание, доступна ли оплата банковскими картами в Вашем регионе курьерской доставки или в выбранном Пункте самовывоза. Вместе с заказом Вы получите кассовый чек.</p>
-                <p class="p"><strong>Обратите внимание:</strong> Сервисы Apple Pay и Google Pay недоступны. Пожалуйста, возьмите с собой пластиковую банковскую карту</p>
-                <h3 class="h3">Принимаются банковские карты:</h3>
-                <img src="assets/png/kards/payment.jpg" alt="" width="500px">
-            </div>
-        </section>
-        <section class="yslovia">
-            <h1>yslovia</h1>
-        </section>
-        <section class="Pravila">
-            <h1>Pravila</h1>
-        </section>
-    </main>
->>>>>>> 5d6400e45d89f31021b11302cb2a6900d43d1cf0
 </body>
 <script defer src="assets/js/Pomosh-skip.js"></script>
 <script defer src="assets/js/Color-logo.js"></script>

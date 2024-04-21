@@ -49,90 +49,13 @@
                 </section>
                 <section class="vse-veshi">
                     <h1 class="nazvanie">НОВИНКИ</h1>
-<<<<<<< HEAD
                     <div class="kart" id="product-container">
 
-=======
-                    <div class="kart">
-                        <a href="">
-                            <div class="blok-kart">
-                                <img src="assets/png/veshi/5350836_01.jpg" alt="">
-                                <h4>Rinascimento</h4>
-                                <p>Плащ</p>
-                                <h3>23 000Р</h3>
-                                <p>44 45 46 50</p>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="blok-kart">
-                                <img src="assets/png/veshi/5350836_01.jpg" alt="">
-                                <h4>Rinascimento</h4>
-                                <p>Плащ</p>
-                                <h3>23 000Р</h3>
-                                <p>44 45 46 50</p>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="blok-kart">
-                                <img src="assets/png/veshi/5350836_01.jpg" alt="">
-                                <h4>Rinascimento</h4>
-                                <p>Плащ</p>
-                                <h3>23 000Р</h3>
-                                <p>44 45 46 50</p>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="blok-kart">
-                                <img src="assets/png/veshi/5350836_01.jpg" alt="">
-                                <h4>Rinascimento</h4>
-                                <p>Плащ</p>
-                                <h3>23 000Р</h3>
-                                <p>44 45 46 50</p>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="blok-kart">
-                                <img src="assets/png/veshi/5350836_01.jpg" alt="">
-                                <h4>Rinascimento</h4>
-                                <p>Плащ</p>
-                                <h3>23 000Р</h3>
-                                <p>44 45 46 50</p>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="blok-kart">
-                                <img src="assets/png/veshi/5350836_01.jpg" alt="">
-                                <h4>Rinascimento</h4>
-                                <p>Плащ</p>
-                                <h3>23 000Р</h3>
-                                <p>44 45 46 50</p>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="blok-kart">
-                                <img src="assets/png/veshi/5350836_01.jpg" alt="">
-                                <h4>Rinascimento</h4>
-                                <p>Плащ</p>
-                                <h3>23 000Р</h3>
-                                <p>44 45 46 50</p>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="blok-kart">
-                                <img src="assets/png/veshi/5350836_01.jpg" alt="">
-                                <h4>Rinascimento</h4>
-                                <p>Плащ</p>
-                                <h3>23 000Р</h3>
-                                <p>44 45 46 50</p>
-                            </div>
-                        </a>
->>>>>>> 5d6400e45d89f31021b11302cb2a6900d43d1cf0
                     </div>
                 </section>
             </div>
         </section>
     </main>
-<<<<<<< HEAD
     <script>
     // Загрузка каталога товаров после загрузки основной страницы
     window.onload = function() {
@@ -146,8 +69,6 @@
         xhr.send();
     };
     </script>
-=======
->>>>>>> 5d6400e45d89f31021b11302cb2a6900d43d1cf0
     <?php
     include ('assets/php/foozer.php')
     ?>
