@@ -12,13 +12,13 @@
     <section class="katalog-menu">
         <img class="manu-kartinka" id="closeMenuButton" src="assets/svg/Manu-zakr.svg" alt="">
         <div class="pod-katalog-menu">
-            <a href="katalog.php">НОВИНКИ</a>
-            <a href="katalog.php">ФУТБОЛКИ</a>
-            <a href="katalog.php">ОБУВЬ</a>
-            <a href="katalog.php">ДЖИНСЫ</a>
-            <a href="katalog.php">КУРТКИ</a>
-            <a href="katalog.php">МУЖСКОЕ</a>
-            <a href="katalog.php">ЖЕНСКОЕ</a>
+            <a href="Katalog.php?category=НОВИНКИ">НОВИНКИ</a>
+            <a href="Katalog.php?category=ФУТБОЛКИ">ФУТБОЛКИ</a>
+            <a href="Katalog.php?category=ОБУВЬ">ОБУВЬ</a>
+            <a href="Katalog.php?category=ДЖИНСЫ">ДЖИНСЫ</a>
+            <a href="Katalog.php?category=КУРТКИ">КУРТКИ</a>
+            <a href="Katalog.php?category=МУЖСКОЕ">МУЖСКОЕ</a>
+            <a href="Katalog.php?category=ЖЕНСКОЕ">ЖЕНСКОЕ</a>
         </div>
         <div class="pod-katalog-menu2">
             <a href="Obrende.php">О бренде</a>
@@ -31,3 +31,9 @@
         </div>
     </section>
     <script defer src="assets/js/sfondo.js"></script>
+<script>
+    function changeCategory(category) {
+        document.getElementById("categoryTitle").innerText = category;
+        // Здесь может быть ваш код для загрузки товаров из соответствующей категории
+    }
+</script>

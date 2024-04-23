@@ -19,83 +19,16 @@
     include ('assets/php/heder.php')
     ?>
     <main>
-        <section>
+        <section class="form-vse">
             <div>
                 <hr>
-                <?php
-// Подключение к базе данных
-$servername = "localhost"; 
-$username = "root";
-$password = ""; 
-$dbname = "Baxa";
-$conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-    die("Ошибка подключения к базе данных: " . $conn->connect_error);
-}
-
-// Получаем id товара из URL-адреса
-if (isset($_GET['id'])) {
-    $id = $_GET['id'];
-    
-    // Выполняем запрос к базе данных для получения информации о товаре по id
-    $sql = "SELECT * FROM Katalog WHERE id = $id";
-    $result = $conn->query($sql);
-
-    if ($result->num_rows > 0) {
-        // Выводим информацию о товаре
-        while($row = $result->fetch_assoc()) {
-            echo '<div class="formirovka">
-                    <div>
-                        <img src="' . $row["img"] . '" alt="">
-                    </div>
-                    <div>
-                        <h1>' . $row["nazvanie"] . '</h1>
-                        <p>' . $row["tovar"] . '</p>
-                        <p>' . $row["razmeri"] . '</p>
-                        <p>' . $row["cena"] . '</p>
-                    </div>
-                    <div class="plus">
-                        <h1>-</h1>
-                        <p>количество</p>
-                        <h1>+</h1>
-                    </div>
-                    <div class="top">
-                        <p>' . $row["price"] . '</p>
-                    </div>
-                    <div class="top">
-                        <h1>Убрать</h1>
-                    </div>
-                </div>';
-        }
-    } else {
-        echo "Товар не найден";
-    }
-} else {
-    echo "ID товара не указан";
-}
-
-$conn->close();
-?>
+                    <?php include_once 'assets/bd/korzina-bd.php'; ?>
                 <hr>
             </div>
         </section>
-        <style>
-            .formirovka {
-                display: flex;
-                gap: 100px;
-                align-items: center;
-            }
-            .plus {
-                display: flex;
-                align-items: center;
-                margin-bottom: auto;
-            }
-            .top {
-                margin-bottom: auto;
-            }
-        </style>
     </main>
 </body>
+<script defer src="assets/js/plus.js"></script>
 <script defer src="assets/js/sfondo.js"></script>
 <script defer src="assets/js/Logo.js"></script>
 <script defer src="assets/js/yvedomleniya.js"></script>

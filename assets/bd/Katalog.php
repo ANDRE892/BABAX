@@ -1,16 +1,11 @@
 <?php
-$servername = "localhost"; 
-$username = "root";
-$password = ""; 
-$dbname = "Baxa";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
+require_once 'bd.php';
 
 if ($conn->connect_error) {
     die("Ошибка подключения к базе данных: " . $conn->connect_error);
 }
 
-$sql = "SELECT * FROM Katalog WHERE id <= 2";
+$sql = "SELECT * FROM Katalog WHERE id <= 3";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {

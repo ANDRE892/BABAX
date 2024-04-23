@@ -584,3 +584,41 @@ border-radius: 10px;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
 }
+/* korzina */
+.form-vse {
+    margin-left: 20%;
+}
+.formirovka {
+
+}
+.plus {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: auto;
+}
+.plus h1 {
+    cursor: pointer;
+}
+.formirovka img {
+    width: 150px;
+    height: 200px;
+}
+.top {
+    cursor: pointer;
+}            
+.formirovka {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+.top {
+    margin-bottom: auto;
+}
+.fdgs {
+    font-size: 30px;
+}
+.displaya {
+    text-decoration: none;
+    color: black;
+}
