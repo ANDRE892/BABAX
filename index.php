@@ -21,19 +21,19 @@
     <main>
         <section class="glav-index-png">
             <div class="png-index">
-                <a href="Katalog.php">
+                <a href="Katalog.php?category=НОВИНКИ">
                     <div class="image-container">
                         <img src="assets/png/chelsockani.png" alt="" width="400px" height="500px">
                         <div class="image-text">НОВИНКИ</div>
                     </div>
                 </a>
-                <a href="Katalog.php">
+                <a href="Katalog.php?category=КУРТКИ">
                     <div class="image-container">
                         <img src="assets/png/brutal.png" alt="" width="400px" height="500px">
                         <div class="image-text">КУРТКИ</div>
                     </div>
                 </a>
-                <a href="Katalog.php">
+                <a href="Katalog.php?category=ОБУВЬ">
                     <div class="image-container">
                         <img src="assets/png/krosi.png" alt="" width="810px" height="300px">
                         <div class="image-text">ОБУВЬ</div>
@@ -41,13 +41,13 @@
                 </a>
             </div>
             <div class="png-index2">
-                <a href="Katalog.php">
+                <a href="Katalog.php?category=ФУТБОЛКИ">
                     <div class="image-container">
                         <img src="assets/png/odejda.png" alt="" width="400px" height="400px">
                         <div class="image-text">ФУТБОЛКИ</div>
                     </div>
                 </a>
-                <a href="Katalog.php">
+                <a href="Katalog.php?category=ДЖИНСЫ">
                     <div class="image-container">
                         <img src="assets/png/jinsi.png" alt="" width="400px" height="400px">
                         <div class="image-text">ДЖИНСЫ</div>

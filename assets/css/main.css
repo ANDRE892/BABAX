@@ -622,3 +622,19 @@ border-radius: 10px;
     text-decoration: none;
     color: black;
 }
+.buttom-vxod {
+    background-color: black;
+    font-size: 25px;
+    padding: 8px;
+    color: white;
+    cursor: pointer;
+    border: double 6px rgb(255, 255, 255);
+    border-radius: 10px;
+    transition: background-color 0.5s ease, color 1s ease , border 1s ease , border-radius 1s ease ;
+}
+.buttom-vxod:hover {
+    background-color: white;
+    color: black;
+    border: double 6px rgb(0, 0, 0);
+    border-radius: 5px;
+}

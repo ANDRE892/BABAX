@@ -21,24 +21,9 @@
     <main>
         <div class="container-form">
             <h1>Регистрация</h1>
-            <form class="form-1" enctype="application/x-www-form-urlencoded" action="/" method="post">
-                <div class="form-group">
-                    <input type="text" class="r-input undefined" pattern=".*" name="lname" required="">
-                    <label class="label">Почта</label>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="r-input undefined" pattern=".*" name="lname" required="">
-                    <label class="label">Телефон</label>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="r-input undefined" pattern=".*" name="lname" required="">
-                    <label class="label">Пароль</label>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="r-input undefined" pattern=".*" name="lname" required="">
-                    <label class="label">Повторите пароль</label>
-                </div>
-            </form>
+            <?php
+                include ('assets/bd/Registraciya-bd.php')
+            ?>
         </div>
     </main>
 </body>

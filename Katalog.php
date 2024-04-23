@@ -50,7 +50,7 @@
                 <section class="vse-veshi">
                     <h1 class="nazvanie"><?php echo $_GET['category']; ?></h1>
                     <div class="kart" id="product-container">
-                        <?php include_once 'Katalog.php'; ?>
+                        <?php include_once 'assets/bd/Katalog-bd.php'; ?>
                     </div>
                 </section>
             </div>
