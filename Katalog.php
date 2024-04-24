@@ -22,28 +22,28 @@
         <section class="Katalog">
             <div class="png-glav-katalog">
                 <section class="katalog-top">
-                    <a href="">
+                    <a href="Katalog.php?category=МУЖСКОЕ">
                         <div class="katalog-container">
                             <img src="assets/png/katalog/man.jpg" alt="" width="400px" height="600px">
                             <div class="katalog-text">МУЖСКОЕ</div>
                         </div>
                     </a>
-                    <a href="">
+                    <a href="Katalog.php?category=ЖЕНСКОЕ">
                         <div class="katalog-container">
                             <img src="assets/png/katalog/women.jpg" alt="" width="400px" height="600px">
                             <div class="katalog-text">ЖЕНСКОЕ</div>
                         </div>
                     </a>
-                    <a href="">
+                    <a href="Katalog.php?category=ДЕТИ">
                         <div class="katalog-container">
                             <img src="assets/png/katalog/kids.jpg" alt="" width="400px" height="600px">
                             <div class="katalog-text">ДЕТИ</div>
                         </div>
                     </a>
-                    <a class="akses" href="">
+                    <a class="akses" href="Katalog.php?category=АКСЕССУАРЫ">
                         <div class="katalog-container">
                             <img src="assets/png/katalog/akses.jpg" alt="" width="400px" height="600px">
-                            <div class="katalog-text">Аксесуары</div>
+                            <div class="katalog-text">АКСЕССУАРЫ</div>
                         </div>
                     </a>
                 </section>

@@ -5,7 +5,7 @@ if ($conn->connect_error) {
     die("Ошибка подключения к базе данных: " . $conn->connect_error);
 }
 
-// Проверяем, передан ли параметр category в URL
+// Проверяем, передан ли параметр category в URL ..это heder
 if(isset($_GET['category'])) {
     $category = $_GET['category'];
     
@@ -32,19 +32,21 @@ if(isset($_GET['category'])) {
         case 'ЖЕНСКОЕ':
             $sql = "SELECT * FROM Katalog WHERE id BETWEEN 12 AND 14";
             break;
+        case 'АКСЕССУАРЫ':
+            $sql = "SELECT * FROM Katalog WHERE id BETWEEN 14 AND 16";
+            break;
         default:
-            // Если переданная категория не распознана, можно вывести сообщение об ошибке или выполнить другое действие по умолчанию
             die("Ошибка: Неправильная категория товаров");
     }
 } else {
-    // Если параметр category не передан, можно выполнить какое-то другое действие по умолчанию
+    // Если параметр category не передан
     die("Ошибка: Категория товаров не указана");
 }
 
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-    // Создаем HTML-разметку для каждого товара
+    //  HTML-разметка для каждого товара
     while($row = $result->fetch_assoc()) {
         echo '<a href="Tovar.php?id=' . $row["id"] . '">
                 <div class="blok-kart">
