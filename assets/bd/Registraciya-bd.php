@@ -4,13 +4,13 @@ require_once 'bd.php';
 
 $errors = array(); // Массив для хранения ошибок
 
+if (isset($_POST['submit'])) { // Проверка, была ли отправлена форма
 $login = $_POST['login'];
 $email = $_POST['email'];
 $phone = $_POST['phone'];
 $pass = $_POST['pass'];
 $repass = $_POST['repass'];
 
-if (isset($_POST['submit'])) { // Проверка, была ли отправлена форма
     if (empty($login) || empty($phone) || empty($email) || empty($pass) || empty($repass)) {
         $errors[] = "Все поля должны быть заполнены";
     } elseif ($pass != $repass) {
