@@ -19,6 +19,7 @@
             <a href="Katalog.php?category=КУРТКИ">КУРТКИ</a>
             <a href="Katalog.php?category=МУЖСКОЕ">МУЖСКОЕ</a>
             <a href="Katalog.php?category=ЖЕНСКОЕ">ЖЕНСКОЕ</a>
+            <a href="Katalog.php?category=АКСЕССУАРЫ">АКСЕССУАРЫ</a>
         </div>
         <div class="pod-katalog-menu2">
             <a href="index.php">Главная</a>

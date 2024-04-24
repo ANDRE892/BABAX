@@ -34,13 +34,7 @@
                             <div class="katalog-text">ЖЕНСКОЕ</div>
                         </div>
                     </a>
-                    <a href="Katalog.php?category=ДЕТИ">
-                        <div class="katalog-container">
-                            <img src="assets/png/katalog/kids.jpg" alt="" width="400px" height="600px">
-                            <div class="katalog-text">ДЕТИ</div>
-                        </div>
-                    </a>
-                    <a class="akses" href="Katalog.php?category=АКСЕССУАРЫ">
+                    <a href="Katalog.php?category=АКСЕССУАРЫ">
                         <div class="katalog-container">
                             <img src="assets/png/katalog/akses.jpg" alt="" width="400px" height="600px">
                             <div class="katalog-text">АКСЕССУАРЫ</div>
